@@ -270,6 +270,7 @@ with st.container():
 
             uploaded_file = st.file_uploader("Upload a CSV file to summarize it!", type=["csv"])
             if uploaded_file is not None:
+                st.success("File uploaded successfully! Please wait for your analysis!")
                 df = pd.read_csv(uploaded_file)
                 
                 df1 = classify_sentiments_auto(df)
