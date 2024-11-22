@@ -1,9 +1,8 @@
-import os
+
 import openai
 import numpy as np
 import pandas as pd
-import json
-import faiss
+
 import warnings
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
@@ -16,12 +15,6 @@ from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from openai.embeddings_utils import get_embedding
 from streamlit_option_menu import option_menu
 from streamlit_extras.mention import mention
-import requests
-from bs4 import BeautifulSoup
-import pickle
-import h5py
-import time
-from fpdf import FPDF
 
 import pandas as pd
 import nltk
